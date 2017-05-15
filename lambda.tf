@@ -86,8 +86,6 @@ resource "aws_lambda_function" "imghosting-cleanup" {
     environment {
       variables {
         BUCKET = "imghosting-${var.name}"
-        BUCKET_URL = "http://imghosting-${var.name}.s3-website-${var.region}.amazonaws.com/"
-        SECRET = "hufflepuff"
       }
     }
 }
